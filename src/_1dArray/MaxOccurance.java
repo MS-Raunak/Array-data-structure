@@ -1,3 +1,5 @@
+package _1dArray;
+
 /**
  * Program to find max repeated element
  * arr = [12,22,35,22,54,12,22]
