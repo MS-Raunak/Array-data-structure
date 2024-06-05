@@ -47,7 +47,6 @@ public class InsertElement {
 
         System.out.print("enter ele: ");
         int ele = sc.nextInt();
-
         System.out.println(Arrays.toString(addAt(index, ele, arr)));
     }
 }
