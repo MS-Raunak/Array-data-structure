@@ -1,5 +1,6 @@
 package _1dArray;
 
+//Sum of all elements of given array
 public class SumOfAllElements {
     public static void main(String[] args) {
         int[]arr = {1,2,3,4,5};
