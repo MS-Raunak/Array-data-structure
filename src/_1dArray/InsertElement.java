@@ -34,6 +34,7 @@ public class InsertElement {
         //after shifting insert element at specified index
         temp[index] = ele;
 
+        //return temp array
         return temp;
     }
 
