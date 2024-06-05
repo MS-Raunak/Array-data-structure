@@ -10,7 +10,7 @@ public class LinearSearch {
         int[]arr = {12, 121, 13, 151, 97};
         System.out.println("Given Array: " + Arrays.toString(arr));
 
-        System.out.print("enter key: ");
+        System.out.print("enter key(ele): ");
         int key = sc.nextInt();
 
 
