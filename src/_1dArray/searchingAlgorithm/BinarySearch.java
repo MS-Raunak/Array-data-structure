@@ -28,13 +28,15 @@ public class BinarySearch {
         int key = sc.nextInt();
 
 
-        int index = binSearch(arr, key);
+        //int index = binSearch(arr, key);
+        int index = binSearchRec(arr, key, 0, arr.length-1);
 
         if (index==-1)
             System.out.println("Element not found in given array");
         else System.out.println("Given element " + key + " is found at " + index + "th index");
     }
 
+    //Binary Search Algorithm Using While Loop
     private static int binSearch(int[] arr, int key) {
 
         int stIdx=0;
@@ -54,5 +56,20 @@ public class BinarySearch {
 
         }
         return -1;
+    }
+
+    //Binary Search Algorithm Using Recursion
+    private static int binSearchRec(int[] arr, int key, int st, int end) {
+        if (st>end)
+            return -1;
+
+        int mid = (st+end)/2;
+
+         if (key==arr[mid]) return mid;
+         else if (key < arr[mid])
+             return binSearchRec(arr,key,st,mid-1);
+         else
+             return binSearchRec(arr, key, mid+1, end);
+
     }
 }
