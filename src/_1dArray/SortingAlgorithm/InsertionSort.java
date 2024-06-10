@@ -36,7 +36,7 @@ import java.util.Arrays;
  *
  */
 public class InsertionSort {
-    //Insertion Sort
+    //Insertion Sort: In Ascending Order
     private static int[] insertionSort(int[] arr) {
         for (int i=1; i< arr.length; i++){
             int j=i;
@@ -52,10 +52,27 @@ public class InsertionSort {
         return arr;
     }
 
+    //Insertion Sort: In Descending Order
+    private static int[] insertionSortDesc(int[] arr) {
+        for (int i=1; i< arr.length; i++){
+            int j=i;
+            while (j >= 1){
+                if (arr[j] > arr[j-1]){
+                    int temp = arr[j];
+                    arr[j] = arr[j-1];
+                    arr[j-1] = temp;
+                }
+                j--;
+            }
+        }
+        return arr;
+    }
+
     public static void main(String[] args) {
         int[]arr = {20, 22, 13, 5, 97,1,7,98};
         System.out.println("Given Array: " + Arrays.toString(arr));
-        System.out.println("Sorted Array: " + Arrays.toString(insertionSort(arr)));
+        System.out.println("Sorted Array(Ascending): " + Arrays.toString(insertionSort(arr)));
+        System.out.println("Sorted Array(Descending): " + Arrays.toString(insertionSortDesc(arr)));
 
     }
 }
