@@ -17,7 +17,7 @@ import java.util.Arrays;
  *
  * Time Complexity Of QuickSort
  * In Worst Case
-     O(n2), because of
+     O(n^2), because of
      worst case occurs when pivot ele always either be smallest or largest.
      The reason of worst case is Array is already sorted
  * In Average Case:

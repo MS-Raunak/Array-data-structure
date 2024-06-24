@@ -18,6 +18,7 @@ public class RemoveDuplicateEle {
       return newArr;
     }
 
+    //Return total duplicate elements
     private static int countDuplicates(int[] arr) {
         int count = 0;
         for (int i=0; i< arr.length; i++) {
@@ -39,6 +40,7 @@ public class RemoveDuplicateEle {
         int[]temp = new int[arr.length];
         int idx=0;
 
+        //copy arr array's unique elements into the temp array
         for (int i=0; i<arr.length-1; i++) {
             if (arr[i]!=arr[i+1])
                 temp[idx++] = arr[i];
